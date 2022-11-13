@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Offcanvas navbar template · Bootstrap v5.1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="./img/logo.svg" sizes="180x180" />
+    <link rel="icon" href="./img/logo.svg" sizes="32x32" type="image/png" />
+    <link rel="icon" href="./img/logo.svg" sizes="16x16" type="image/png" />
+    <link rel="mask-icon" href="./img/logo.svg" color="#7952b3" />
+    <link rel="icon" href="./img/logo.svg" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/offcanvas.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+
+
+    <main class="container mb-5" id="signupContainer">
+        <div class="row px-2">
+            <div class="col-md-6 mb-5 p-2 bg-body  rounded-1 shadow-custom offset-sm-3">
+
+                <div class="row p-2">
+                    <div class="col-sm-12">
+                        <a class="navbar-brand d-block text-center" href="#">
+                            <img class="me-1 mb-1" src="./img/logo.svg" alt="" height="18">
+                            <strong> Ads Proposal </strong>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <h6 class="p-2 my-2">Sign Up</h6>
+
+                <div class="row p-2" id="signupRow">
+                    <div class="col-sm-12">
+                        <label for="title" class="form-label">Email</label>
+                        <!-- <input type="email" class="form-control form-control-sm" aria-describedby="email"
+                            name="email" /> -->
+
+
+                        <div class="input-group input-group-sm mb-1">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email"
+                                value="iamdeepak91@gmail.com" aria-label="Email" id="email"
+                                aria-describedby="basic-addon2" />
+                            <span class="input-group-text change-btn hidden" id="changeBtn">Change</span>
+                        </div>
+
+
+                        <!-- <div id="email" class="form-text fs-small">
+                            - Youtubers for app launch of zuppie app
+                        </div> -->
+                    </div>
+
+                    <div class="hidden" id="otpPasswordDiv">
+                        <div class="col-sm-12">
+                            <label for="title" class="form-label">Verification OTP</label>
+                            <input type="number" class="form-control form-control-sm" aria-describedby="vcode"
+                                name="vcode" />
+                            <div id="email" class="form-text fs-small text-primary">
+                                Resend OTP
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <label for="title" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-sm" aria-describedby="vcode"
+                                name="vcode" />
+                            <div id="password" class="form-text fs-small">
+                                Minimum 8 Characters with @As!23
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="row my-3 px-2 hidden" id="signupOnSuccess">
+                    <div class="col text-center">
+                        <h3> <i class="bi bi-patch-check-fill"></i></h3>
+                        <h3 class="text-success">Congratulation!</h3>
+                        <h6 class="text-muted">Your account has been created successfully</h6>
+                    </div>
+                </div>
+
+
+                <div class="row my-3 px-2">
+                    <div class="col-sm-6">
+                        <div class="py-2 text-danger" id="errorDiv">
+                            Invalid Email Address
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-grid py-2  d-md-flex d-md-flex justify-content-md-end">
+                            <button class="btn btn-sm btn-primary px-3 step-1  shadow-custom" id="sendOtpNext"
+                                type="button">
+                                Next
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+    <div class="container-fluid fixed-bottom">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <!-- <svg class="bi" width="30" height="24">
+                  <use xlink:href="#bootstrap" />
+                </svg> -->
+
+                    <img style="filter: opacity(.6);" src="./img/logo.svg" alt="" height="15" />
+                </a>
+                <span class="text-muted">&copy; Ads Proposal Pvt. Limited</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>

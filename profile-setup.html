@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/ -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Offcanvas navbar template · Bootstrap v5.1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+    <!-- Range SLider -->
+    <link rel="stylesheet" href="css/nouislider.min.css">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="./img/icon.svg" />
+    <meta name="theme-color" content="#7952b3" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./css/offcanvas.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+
+    <main class="container mb-5" id="profileContainer">
+        <div class="row px-2">
+            <div class="col-md-6 mb-5 p-2 bg-body  rounded-1 shadow-custom offset-sm-3">
+
+                <div class="row p-2">
+
+
+
+                    <div class="col-sm-12 text-center p-1 flex-shrink-1 position-relative  align-self-center">
+                        <img src="https://yt3.ggpht.com/_9PcqAv7mXZ441DIOwZuWKw32pxtiPjH08e3dW1xlB_LjFSpEwOXfFEoguB_Jz23UPzzf5XJ=s68-c-k-c0x00ffffff-no-rj"
+                            alt="" srcset="" class="profile-img-edit">
+                        <span class="position-absolute bottom-0 start-50 translate-middle" id="changeDP">
+                            Change
+                        </span>
+
+
+                    </div>
+
+                    <div class="col-sm-12 my-1">
+                        <label for="title" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-sm" aria-describedby="name" name="name" />
+                    </div>
+
+                    <div class="col-sm-12 my-1">
+                        <label for="" class="form-label">Target Audience</label>
+                        <input class="tagify--outside" name="creators-audiance"
+                            placeholder="Educational, Electronics, Mobile" value="" />
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="" class="form-label">Country</label>
+                        <input name='tags3-1' class='selectMode countries' placeholder="Try to add tags from the list">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="" class="form-label">Language</label>
+                        <input class="tagify--outside" name="adsLanguage" placeholder="English" value="" />
+                    </div>
+
+                    <div class="col">
+                        <label for="" class="form-label">Choose account type
+                        </label>
+                        <div class="d-flex gap-3">
+                            <button type="button" class="btn btn-outline-secondary bg-active py-3 w-100">
+                                Creator / Publisher
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary py-3 position-relative w-100">
+                                Advertiser / Brand
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 my-1">
+                        <fieldset class="reset">
+                            <legend class="reset">Platform</legend>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button accordian-style fw-bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <i class="bi bi-facebook me-2"></i> Facebook
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body p-1">
+
+                                            <div class="col rounded-1 p-1  bg-body">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-1  text-center align-self-center">
+                                                        <img src="https://yt3.ggpht.com/_9PcqAv7mXZ441DIOwZuWKw32pxtiPjH08e3dW1xlB_LjFSpEwOXfFEoguB_Jz23UPzzf5XJ=s68-c-k-c0x00ffffff-no-rj"
+                                                            alt="" srcset="" class="profile-img" style="
+                                            background-color: #5576ba;
+                                        ">
+
+                                                    </div>
+                                                    <div class="ps-2 w-100  align-self-center">
+                                                        <div class="p-name m-0 p-0">
+                                                            Ram Wariour
+                                                            <i class="bi bi-check-circle-fill"
+                                                                style="font-size: 0.9rem;"></i>
+                                                        </div>
+                                                        <div class="mt-1 f-1">
+
+                                                            <span>5M Followers
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="flex-shrink-0 align-self-center">
+                                                        <div class="vstack align-items-end">
+
+
+                                                            <div class="d-grid">
+                                                                <div class="dropdown">
+                                                                    <button
+                                                                        class="btn btn-sm btn-secondary dropdown-toggle more-btn"
+                                                                        type="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="false">
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a class="dropdown-item" href="#">Update</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a>
+                                                                        </li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button accordian-style fw-bold collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <i class="bi bi-instagram me-2"></i> Instagram
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body p-1">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            second item's accordion body. Let's imagine this being filled with some
+                                            actual
+                                            content.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button accordian-style collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <i class="bi bi-plus-circle me-2"></i> Add platform
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body p-1">
+                                            <div class="row">
+                                                <div class="col-sm-12 my-1">
+
+                                                    <label for="exampleDropdownFormEmail2"
+                                                        class="form-label">Platform</label>
+                                                    <select class="form-select form-select-sm"
+                                                        aria-label="Default select example">
+                                                        <option>Instagram</option>
+                                                        <option>YouTube</option>
+                                                        <option>Facebook</option>
+                                                        <option>Twitter</option>
+                                                    </select>
+
+                                                </div>
+
+                                                <div class="col-sm-12 my-1">
+                                                    <div class="row m- p-0">
+                                                        <div class="col-9 my-1">
+                                                            <label for="title" class="form-label">Channel id</label>
+                                                            <input type="text" class="form-control form-control-sm"
+                                                                aria-describedby="userid" name="userid" />
+                                                        </div>
+
+                                                        <div class="col-3 my-1 align-self-end">
+                                                            <div class="d-grid">
+                                                                <button class="btn btn-sm btn-info shadow-custom"
+                                                                    type="button">Verify</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="alert fs-small p-0 fw-bold d-flex align-items-center"
+                                                        role="alert">
+                                                        <a href="#" class="text-decoration-none">
+                                                            <i class="bi bi-info-circle-fill pe-1"></i>
+                                                            How to Verify ?</a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12 my-1">
+                                                    <label for="title" class="form-label">Popularly knows as</label>
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        aria-describedby="name" name="name" />
+                                                </div>
+                                                <div class="col-sm-12 my-1">
+                                                    <label for="title" class="form-label">Total followers</label>
+                                                    <input type="text" class="form-control form-control-sm"
+                                                        aria-describedby="name" name="name" />
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="d-grid d-md-flex py-3 justify-content-md-end">
+                                                        <button class="btn btn-sm px-4 btn-primary"
+                                                            type="button">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <div class="col-sm-12 my-1">
+                        <fieldset class="reset">
+                            <legend class="reset">Ad type & Cost</legend>
+                            <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-headingOne">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseOne"
+                                            aria-expanded="false" aria-controls="flush1-collapseOne">
+                                            Post (Image/Text/Link/Hashtag)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-headingOne" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">
+
+                                            <div class="row m-1 p-0">
+                                                <div class="col-sm-12 py-3">
+                                                    <div id="slider"></div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="" class="form-label">Min</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <button class="btn btn-outline-secondary" type="button"
+                                                            id="button-addon1">₹</button>
+                                                        <input type="text" id="setMin"
+                                                            class="form-control form-control-sm" placeholder="Min"
+                                                            aria-label="Min" aria-describedby="Min">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="" class="form-label">Max</label>
+                                                    <div class="input-group input-group-sm">
+                                                        <button class="btn btn-outline-secondary" type="button"
+                                                            id="button-addon1">₹</button>
+
+                                                        <input type="text" id="setMax"
+                                                            class="form-control form-control-sm" placeholder="Max"
+                                                            aria-label="Max" aria-describedby="Max">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-headingTwo">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush1-collapseTwo">
+                                            Post (Existing Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-headingTwo" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Post (Existing Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-headingThree">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Post (By Creating New Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-headingThree" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Post (By Creating New Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading4">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Video (Existing Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading4" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Video (Existing Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading5">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Video (By Creating New Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading5" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Video (By Creating New Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading6">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Story (Image/Text/Link/Hashtag)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading6" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Story (Image/Text/Link/Hashtag)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading7">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Story (Existing Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading7" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Story (Existing Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading8">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Story (By Creating New Ad Clip)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading8" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">Story (By Creating New Ad Clip)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading9">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Sponsored Video (Existing Ad Clip in Between Creator Video)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading9" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1"> Sponsored Video (Existing Ad Clip in Between
+                                            Creator Video)</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading10">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Sponsored Video (By Creating New Ad Clip in Between Creator Video)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading10" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1">
+                                            Sponsored Video (By Creating New Ad Clip in Between Creator Video)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush1-heading11">
+                                        <button class="accordion-button accordian-button-ad collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush1-collapseThree"
+                                            aria-expanded="false" aria-controls="flush1-collapseThree">
+                                            Referal (Link on Creators Post or Video)
+                                        </button>
+                                    </h2>
+                                    <div id="flush1-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush1-heading11" data-bs-parent="#accordionFlushExample1">
+                                        <div class="accordion-body p-1"> Referal (Link on Creators Post or Video)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+    </main>
+
+
+    <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <!-- <svg class="bi" width="30" height="24">
+                  <use xlink:href="#bootstrap" />
+                </svg> -->
+
+                    <img style="filter: opacity(.6);" src="./img/icon.svg" alt="" height="15" />
+                </a>
+                <span class="text-muted">&copy; Ads Proposal Pvt. Limited</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src=" ./js/profile.setup.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  overflow-x: unset; /* Prevent scroll on narrow devices */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     overflow-y: auto;
     visibility: hidden;
     background-color: #343a40;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
   .offcanvas-collapse.open {
     visibility: visible;
@@ -29,7 +29,7 @@ body {
 
 .nav-scroller {
   position: relative;
-  z-index: 2;
+  z-index: 1029;
   height: 2.75rem;
   overflow-y: hidden;
 }
@@ -38,19 +38,20 @@ body {
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: 1rem;
-  margin-top: -1px;
+  margin-top: 0;
   overflow-x: auto;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
 
 .nav-underline .nav-link {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  font-size: .875rem;
-  color: #6c757d;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #001221;
+  font-weight: 500;
 }
 
 .nav-underline .nav-link:hover {
@@ -58,8 +59,8 @@ body {
 }
 
 .nav-underline .active {
-  font-weight: 500;
-  color: #343a40;
+  color: #0086ff;
+  font-weight: 700;
 }
 
 .bg-purple {

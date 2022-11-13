@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Hugo 0.88.1" />
+  <title>Offcanvas navbar template · Bootstrap v5.1</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/offcanvas-navbar/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+  <!-- Favicons -->
+
+  <link rel="icon" href="./img/icon.png" />
+  <meta name="theme-color" content="#7952b3" />
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="./css/offcanvas.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="me-1" src="./img/icon.svg" alt="" height="30">
+        <img class="me-1" src="./img/logo.svg" alt="" height="30">
+        <!-- <strong class="mb-1"> Ad<span>s</span> Proposal </strong> -->
+      </a>
+
+      <div class="d-flex text-end">
+        <button type="button" class="btn p-0 position-relative">
+          <i class="bi bi-bell-fill fs-4"></i>
+          <span class="position-absolute notification bg-danger border border-light rounded-circle"
+            style="padding: 5px;left: 10px">
+          </span>
+        </button>
+
+        <div class="dropdown-center">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img
+              src="https://yt3.ggpht.com/_9PcqAv7mXZ441DIOwZuWKw32pxtiPjH08e3dW1xlB_LjFSpEwOXfFEoguB_Jz23UPzzf5XJ=s68-c-k-c0x00ffffff-no-rj"
+              height="30" style="border-radius:50%">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="nav-scroller bg-body shadow-sm">
+    <nav class="container nav nav-underline" aria-label="Secondary navigation">
+      <a class="nav-link nav-link-custom active" aria-current="page" href="/">Home</a>
+
+      <a class="nav-link nav-link-custom" href="#">My Bidings</a>
+      <a class="nav-link nav-link-custom" href="#">Browse Ads Proposal</a>
+      <a class="nav-link nav-link-custom" href="#">Post Ads Proposal</a>
+
+    </nav>
+  </div>
+
+  <main class="container my-5">
+    <nav class="py-2" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Browse Proposals</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Proposal Details</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-10 py-4 bg-body shadow-sm  rounded-1 offset-sm-1">
+        <div class="d-flex">
+          <div class="px-2 w-100   align-self-center">
+            <div class="my-1 fs-9 fw-bold pb-1">
+              <span>
+                ₹12,500.00 – 37,500.00 INR
+              </span>
+              <span class="float-end">
+                <button class="btn btn-sm btn-outline-primary">Place Bid</button>
+              </span>
+            </div>
+            <div class="bid-text m-0 p-0">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established.
+            </div>
+            <div class="f-1 m-0 p-0 py-1">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established.
+              m is simply dummy text of the printing and typesetting industry. It is a long established.
+            </div>
+
+            <div class="my-1 fs-9 fw-semibold pb-1">
+              <span>
+                2 Days ago
+              </span>
+              <span class="float-end">
+                Proposals: 23
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+        <h6 class="ap-heading px-2 my-3">
+          <span>Ad Details</span>
+        </h6>
+
+        <div class="row  px-3">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Ad Type:
+          </div>
+          <div class="col-8 py-1 fs-9">
+
+            Sponsored Video (Existing Ad Clip in Between Creator Video) <i class="bi bi-info-circle-fill"></i>
+
+          </div>
+
+        </div>
+        <div class="row  px-3">
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Ad Language:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            Hindi
+          </div>
+
+        </div>
+        <div class="row  px-3">
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Ad Duration:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            5 Second
+          </div>
+
+        </div>
+        <div class="row  px-3">
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Delivery Time:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            Next Week
+          </div>
+
+        </div>
+        <div class="row  px-3">
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Attachments:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <a href="#" class="text-decoration-none"> ad_detail_final.pdf
+            </a>
+          </div>
+
+        </div>
+        <div class="row  px-3">
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Target Audiance:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <span class="badge rounded-pill border text-dark fs-9 my-1 text-muted fw-normal">Softwares</span>
+            <span class="badge rounded-pill border text-dark fs-9 my-1 text-muted fw-normal">Unboxing</span>
+            <span class="badge rounded-pill border text-dark fs-9 my-1 text-muted fw-normal">Educational</span>
+            <span class="badge rounded-pill border text-dark fs-9 my-1 text-muted fw-normal">Agriculture
+              Channel</span>
+            <span class="badge rounded-pill border text-dark fs-9 my-1 text-muted fw-normal">Information
+              Technology</span>
+          </div>
+
+        </div>
+        <h6 class="ap-heading px-2 my-3">
+          <span>Client Details</span>
+        </h6>
+        <div class="row  px-3">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Website / App URL:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <a href="#">www.zuppie.com</a>
+          </div>
+
+        </div>
+        <div class="row  px-3">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Country:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            India
+          </div>
+
+        </div>
+        <div class="row  px-3">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Member Since:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            Feb 28, 2018
+          </div>
+
+        </div>
+        <div class="row  px-3">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Rating & Reviews:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 0.0
+            (0 reviews)
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-10 my-2 p-4 bg-body shadow-sm  rounded-1 offset-sm-1">
+
+        <div class="row">
+          <h6 class="fw-bold py-2">Biddinng Details</h6>
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Bidding Amount:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <div class="input-group input-group-sm" style="width: 10rem">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1">₹</button>
+              <input type="text" id="setMin" class="form-control form-control-sm" placeholder="Enter Amount"
+                aria-label="EnterAmount" aria-describedby="EnterAmount">
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="fs-9 col-4 py-1  fw-semibold">
+            Your first message to client:
+          </div>
+          <div class="col-8 py-1 fs-9">
+            <textarea class="form-control" id="" placeholder="Why should client accept your proposal ?"
+              rows="5"></textarea>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="d-grid  my-4 gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-info px-4 shadow-sm" type="button">Submit your proposal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class=" container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <!-- <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg> -->
+
+          <img style="filter: opacity(.6);" src="./img/icon.svg" alt="" height="20" />
+        </a>
+        <span class="text-muted">&copy; Ads Proposal Pvt. Limited</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+
+      </ul>
+    </footer>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/offcanvas.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
